@@ -45,10 +45,10 @@ def add_face(name):
             i = i + 1
 
             # Display the count of captured faces on the frame
-            cv2.putText(frame, str(len(faces_data)), (50, 50), cv2.FONT_HERSHEY_COMPLEX, 1, (50, 50, 255), 1)
+            cv2.putText(frame, str(len(faces_data)), (50, 50), cv2.FONT_HERSHEY_COMPLEX, 1, (255, 0, 0), 1)
 
             # Draw a rectangle around the detected face
-            cv2.rectangle(frame, (x, y), (x + w, y + h), (50, 50, 255), 1)
+            cv2.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), 1)
 
        
         cv2.imshow("Frame", frame)
